@@ -372,6 +372,184 @@ h1 {
   color: #38bdf8;
 }
 
+/* ---------- Выпуск игры «Будни ОСМ» ---------- */
+.game-card {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.game-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  padding: 30px 20px;
+  min-width: 0;
+  background: linear-gradient(145deg, #e8efda, #c5d8bc);
+  color: #315c48;
+}
+
+.game-eyebrow {
+  padding: 6px 14px;
+  border: 1px solid #315c4830;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.game-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 14px 35px #315c4820;
+}
+
+.game-cover-caption {
+  max-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.game-body {
+  min-width: 0;
+  padding: 34px;
+}
+
+.game-tag {
+  display: block;
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.game-body h3 {
+  margin: 12px 0 16px;
+  color: #e5e7eb;
+  font-size: 30px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.game-body > p,
+.project-game > p {
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+.game-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 0;
+  margin: 22px 0;
+  list-style: none;
+}
+
+.game-facts li {
+  padding: 6px 11px;
+  border: 1px solid #475569;
+  border-radius: 999px;
+  color: #e2e8f0;
+  font-size: 13px;
+}
+
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.game-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 15px;
+  border-radius: 12px;
+  background: #38bdf81f;
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.game-actions a.game-action-primary,
+.game-actions a:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.game-actions a:focus-visible,
+.game-platforms a:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 4px;
+}
+
+.game-body > .game-platforms {
+  margin: 20px 0 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.game-platforms a {
+  color: #7dd3fc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-game {
+  border-left: 3px solid #38bdf8;
+}
+
+.project-game h3 {
+  margin: 12px 0;
+  font-size: 24px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.project-game > .game-project-note {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.project-game .game-actions {
+  margin-top: 22px;
+}
+
+@media (max-width: 820px) {
+  .game-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .game-cover {
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .game-cover img {
+    max-width: 420px;
+  }
+
+  .game-body {
+    padding: 28px 24px;
+  }
+
+  .game-body h3 {
+    font-size: 25px;
+  }
+}
+
 .project-music > p {
   margin-bottom: 0;
 }

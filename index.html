@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пётр Корытов — сайт-резюме</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -54,6 +54,29 @@
       <h2>Недавнее</h2>
 
       <div class="recent-grid">
+        <article class="game-card" id="osm-game-release" aria-labelledby="osm-game-title">
+          <div class="game-cover">
+            <span class="game-eyebrow">Игра вышла</span>
+            <img src="assets/osm-game-scene.svg" alt="Мультяшное банковское отделение: менеджер помогает клиентам у терминала электронной очереди" width="720" height="350" loading="lazy">
+            <span class="game-cover-caption">Правильный талон — меньше ожидания</span>
+          </div>
+          <div class="game-body">
+            <span class="game-tag">Видеоигра · Python · 2026</span>
+            <h3 id="osm-game-title">Будни Операционно-Сервисного Менеджера</h3>
+            <p>Выпустил мультяшную игру о работе в банковском офисе. Встречайте клиентов, разбирайтесь в их просьбах и выбирайте нужный талон: верный маршрут приносит +1 к рейтингу, ошибка — −1.</p>
+            <ul class="game-facts" aria-label="Об игре">
+              <li>36 ситуаций</li>
+              <li>6 разделов терминала</li>
+              <li>Всего ~1,3 МБ</li>
+            </ul>
+            <div class="game-actions">
+              <a class="game-action-primary" href="https://github.com/peter20191233/osm-manager-game/raw/refs/heads/main/dist/osm-game.zip" aria-label="Скачать игру «Будни Операционно-Сервисного Менеджера» и исходники в ZIP">Скачать игру · ZIP</a>
+              <a href="https://github.com/peter20191233/osm-manager-game" target="_blank" rel="noopener noreferrer">Исходный код на GitHub ↗</a>
+            </div>
+            <p class="game-platforms">Windows: откройте HTML-файл. iOS и Android: играйте в браузере через Wi-Fi с компьютера или после размещения игры по HTTPS. <a href="https://github.com/peter20191233/osm-manager-game#readme" target="_blank" rel="noopener noreferrer">Инструкция запуска ↗</a></p>
+          </div>
+        </article>
+
         <article class="music-card">
           <div class="music-cover">
             <span class="music-eyebrow">Новый релиз</span>
@@ -246,6 +269,17 @@
 
     <section id="projects" class="section">
       <h2>Проекты</h2>
+
+      <article class="project project-game" aria-labelledby="osm-project-title">
+        <span class="game-tag">Выпущенная игра</span>
+        <h3 id="osm-project-title">Будни Операционно-Сервисного Менеджера</h3>
+        <p>Лёгкая браузерная игра на Python и Brython с векторной графикой. Помогайте клиентам попасть к нужным сотрудникам: пройдите смену из 12 клиентов с 35 секундами на каждый ответ или потренируйтесь без таймера.</p>
+        <p class="game-project-note">Ситуации основаны на услугах Сбера, Альфа-Банка и ВТБ. Разделы терминала обобщены для игры — это не официальный тренажёр банков.</p>
+        <div class="game-actions">
+          <a href="#osm-game-release">Подробнее и скачать ↑</a>
+          <a href="https://github.com/peter20191233/osm-manager-game" target="_blank" rel="noopener noreferrer">Посмотреть на GitHub ↗</a>
+        </div>
+      </article>
 
       <div class="project project-music">
         <h3>Музыкальные релизы</h3>
