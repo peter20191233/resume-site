@@ -394,14 +394,23 @@ h1 {
   color: #315c48;
 }
 
-.game-eyebrow {
-  padding: 6px 14px;
-  border: 1px solid #315c4830;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.game-shot {
+  width: 100%;
+  margin: 0;
+}
+
+.game-shot a {
+  display: block;
+  border-radius: 14px;
+}
+
+.game-shot a:focus-visible {
+  outline: 3px solid #315c48;
+  outline-offset: 5px;
+}
+
+.game-shot-mobile {
+  max-width: 220px;
 }
 
 .game-cover img {
@@ -412,10 +421,10 @@ h1 {
   box-shadow: 0 14px 35px #315c4820;
 }
 
-.game-cover-caption {
-  max-width: 230px;
-  font-size: 16px;
-  font-weight: 700;
+.game-shot figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -533,12 +542,20 @@ h1 {
   }
 
   .game-cover {
+    flex-direction: row;
+    align-items: center;
     gap: 18px;
     padding: 24px;
   }
 
-  .game-cover img {
-    max-width: 420px;
+  .game-shot {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 300px;
+  }
+
+  .game-shot-mobile {
+    max-width: 160px;
   }
 
   .game-body {

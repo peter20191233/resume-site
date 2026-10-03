@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пётр Корытов — сайт-резюме</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -55,10 +55,19 @@
 
       <div class="recent-grid">
         <article class="game-card" id="osm-game-release" aria-labelledby="osm-game-title">
-          <div class="game-cover">
-            <span class="game-eyebrow">Обновление 1.1.1</span>
-            <img src="assets/osm-game-scene.svg" alt="Мультяшное банковское отделение: менеджер помогает клиентам у терминала электронной очереди" width="720" height="350" loading="lazy">
-            <span class="game-cover-caption">Правильный талон — меньше ожидания</span>
+          <div class="game-cover" aria-label="Скриншоты игрового процесса">
+            <figure class="game-shot">
+              <a href="assets/osm-game-desktop.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот игры на компьютере в полном размере">
+                <img src="assets/osm-game-desktop.png" alt="Игра на компьютере: клиент просит консультацию по кредиту, выбран верный талон и начислен один балл." width="1280" height="1142" loading="lazy">
+              </a>
+              <figcaption>Игра на компьютере</figcaption>
+            </figure>
+            <figure class="game-shot game-shot-mobile">
+              <a href="assets/osm-game-mobile.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот игры на телефоне в полном размере">
+                <img src="assets/osm-game-mobile.png" alt="Игра на телефоне: ответ на вопрос о вкладах, рейтинг и шесть разделов терминала для выбора талона." width="390" height="991" loading="lazy">
+              </a>
+              <figcaption>Игра на телефоне</figcaption>
+            </figure>
           </div>
           <div class="game-body">
             <span class="game-tag">Видеоигра · Python · 2026</span>
