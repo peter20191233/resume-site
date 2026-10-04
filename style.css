@@ -520,6 +520,24 @@ h1 {
   border-left: 3px solid #38bdf8;
 }
 
+.game-stats {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #475569;
+  border-radius: 14px;
+}
+
+.game-stats h4 { margin: 0 0 14px; color: #e2e8f0; font-size: 16px; }
+.game-stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0; }
+.game-stats dt { color: #cbd5e1; font-size: 12px; }
+.game-stats dd { margin: 4px 0 0; color: #38bdf8; font-size: 28px; font-weight: 700; overflow-wrap: anywhere; }
+.game-stats p, .game-stats noscript { color: #94a3b8; font-size: 12px; line-height: 1.6; }
+.game-stats summary { color: #cbd5e1; font-size: 13px; cursor: pointer; }
+.game-stats summary:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 4px; }
+@media (max-width: 480px) {
+  .game-stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 .project-game h3 {
   margin: 12px 0;
   font-size: 24px;

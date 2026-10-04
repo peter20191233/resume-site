@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пётр Корытов — сайт-резюме</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -81,11 +81,27 @@
               <li>Музыка, созданная ИИ</li>
             </ul>
             <div class="game-actions">
-              <a class="game-action-primary" href="downloads/osm-manager-game-android.apk" download="osm-manager-game-android.apk" aria-label="Скачать приложение «Будни Операционно-Сервисного Менеджера» версии 1.1.1 для Android в формате APK">Скачать для Android · APK</a>
+              <a class="game-action-primary" href="https://github.com/peter20191233/osm-manager-game/releases/download/android-v1.1.1/osm-manager-game-android.apk" aria-label="Скачать приложение «Будни Операционно-Сервисного Менеджера» версии 1.1.1 для Android в формате APK">Скачать для Android · APK</a>
               <a href="games/osm/" aria-label="Открыть веб-игру для iPhone и macOS">Для iPhone и macOS · веб</a>
-              <a href="downloads/osm-game.zip" download="osm-game.zip" aria-label="Скачать HTML-игру для Windows и macOS и исходники в ZIP">Для Windows и macOS · ZIP</a>
+              <a href="https://github.com/peter20191233/osm-manager-game/releases/download/android-v1.1.1/osm-game.zip" aria-label="Скачать HTML-игру для Windows и macOS и исходники в ZIP">Для Windows и macOS · ZIP</a>
               <a href="https://github.com/peter20191233/osm-manager-game" target="_blank" rel="noopener noreferrer">Исходный код на GitHub ↗</a>
             </div>
+            <section class="game-stats" id="game-stats" aria-labelledby="game-stats-title" aria-busy="true">
+              <h4 id="game-stats-title">Загрузки и веб-запуски</h4>
+              <dl class="game-stats-grid">
+                <div><dt>Всего учтено</dt><dd id="game-count-total">—</dd></div>
+                <div><dt>APK</dt><dd id="game-count-apk">—</dd></div>
+                <div><dt>ZIP</dt><dd id="game-count-zip">—</dd></div>
+                <div><dt>Web · запуски</dt><dd id="game-count-web">—</dd></div>
+              </dl>
+              <p id="game-stats-status" role="status">Загружаем статистику…</p>
+              <details>
+                <summary>Как считаем</summary>
+                <p>APK и ZIP — скачивания файлов всех опубликованных версий через GitHub Releases. Web — онлайн-запуски игры с <span id="game-web-since">момента подключения счётчика</span>; повторные запуски в одной сессии могут объединяться. Сумма не означает число уникальных игроков или установленных копий.</p>
+                <p>Старые скачивания напрямую с сайта и прежние запуски Web не учитывались. Офлайн-запуски и блокировщики аналитики могут уменьшать показания. Это вся доступная учтённая история, а не полное число загрузок с первого выпуска.</p>
+              </details>
+              <noscript>Для загрузки статистики включите JavaScript.</noscript>
+            </section>
             <p class="game-platforms">Музыка «Спокойная смена» сочинена ИИ для игры и работает офлайн. Она запускается с началом смены. Кнопка ♪ включает и выключает музыку и звуки; при паузе и сворачивании музыка останавливается.</p>
             <p class="game-platforms"><strong>Обновление 1.1.1 — <time datetime="2026-10-04">04.10.2026</time>.</strong> Упрощён внутренний код игры, добавлены автоматические проверки и уточнены инструкции для macOS. Опубликованы обновлённые APK, ZIP и веб-версия. Привычные правила, игровые ситуации и музыка сохранены.</p>
             <p class="game-platforms">Android 12 и новее: скачайте APK версии 1.1.1, откройте его и нажмите «Установить». Его можно установить поверх предыдущей версии. Затем запускайте «Будни ОСМ» с экрана приложений. Вся игра уже внутри: интернет, Python, компьютер и распаковка не нужны. <a href="https://github.com/peter20191233/osm-manager-game/blob/main/ANDROID.md" target="_blank" rel="noopener noreferrer">Установка на Android ↗</a></p>
@@ -370,5 +386,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script type="module" src="game-stats.mjs"></script>
 </body>
 </html>
