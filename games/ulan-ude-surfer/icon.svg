@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="45%" stop-color="#0369a1" />
+      <stop offset="85%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Silk Blue Degel Gradient -->
+    <linearGradient id="degelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <!-- Red Silk / Tassel Gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+
+    <!-- Tram Red Gradient -->
+    <linearGradient id="tramGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="60%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+
+    <!-- Sun Glow Filter -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="1" />
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Icon Clip Path (Squircle) -->
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="512" height="512" rx="115" ry="115" />
+    </clipPath>
+  </defs>
+
+  <!-- Squircle Base Frame -->
+  <g clip-path="url(#squircle)">
+    <!-- Sky Background -->
+    <rect width="512" height="512" fill="url(#bgGrad)" />
+
+    <!-- Radiant Soyombo Sun in Sky -->
+    <circle cx="390" cy="110" r="100" fill="url(#sunGlow)" />
+    <!-- Golden Sun Core -->
+    <circle cx="390" cy="110" r="42" fill="url(#goldGrad)" />
+    <!-- Sun Rays -->
+    <g stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.6">
+      <line x1="390" y1="46" x2="390" y2="28" />
+      <line x1="390" y1="174" x2="390" y2="192" />
+      <line x1="326" y1="110" x2="308" y2="110" />
+      <line x1="454" y1="110" x2="472" y2="110" />
+      <line x1="345" y1="65" x2="332" y2="52" />
+      <line x1="435" y1="155" x2="448" y2="168" />
+      <line x1="345" y1="155" x2="332" y2="168" />
+      <line x1="435" y1="65" x2="448" y2="52" />
+    </g>
+
+    <!-- Distant Baikal / Sagan-Daban Mountains -->
+    <polygon points="-20,290 80,210 180,270 290,195 410,265 530,190 530,360 -20,360" fill="#0f172a" opacity="0.75" />
+    <polygon points="60,225 80,210 100,225" fill="#f8fafc" opacity="0.85" />
+    <polygon points="270,210 290,195 310,210" fill="#f8fafc" opacity="0.85" />
+    <polygon points="390,205 410,190 430,205" fill="#f8fafc" opacity="0.85" />
+
+    <!-- Ulan-Ude Red Tram Silhouettes & Track Rails -->
+    <path d="M400,270 L520,250 L520,340 L400,355 Z" fill="url(#tramGrad)" opacity="0.85" />
+    <!-- Tram Windows -->
+    <rect x="410" y="275" width="22" height="26" rx="3" fill="#fef08a" opacity="0.9" />
+    <rect x="440" y="271" width="22" height="26" rx="3" fill="#fef08a" opacity="0.9" />
+    <rect x="470" y="267" width="22" height="26" rx="3" fill="#fef08a" opacity="0.9" />
+    <!-- Tram Pantograph -->
+    <path d="M455,270 L460,240 L445,230 L475,230" stroke="#f1f5f9" stroke-width="3" fill="none" opacity="0.8" />
+
+    <!-- Ground / Snow Road Tracks -->
+    <polygon points="-20,320 532,305 532,532 -20,532" fill="#1e293b" />
+    <!-- Golden Tram Rails with Speed Perspectives -->
+    <path d="M-20,440 L532,370" stroke="#fbbf24" stroke-width="6" opacity="0.6" />
+    <path d="M-20,490 L532,410" stroke="#fbbf24" stroke-width="8" opacity="0.8" />
+
+    <!-- Dynamic Speed Lines / Steppe Wind -->
+    <path d="M60,160 Q120,150 180,165" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5" />
+    <path d="M30,200 Q100,190 170,205" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M40,240 Q110,235 160,245" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4" />
+
+    <!-- ============================================== -->
+    <!-- BURYAT ATHLETIC RUNNER IN NATIONAL COSTUME -->
+    <!-- ============================================== -->
+    <g transform="translate(140, 75) scale(0.92)">
+      <!-- Motion Blur Shadow / Baikal Hover Glow -->
+      <ellipse cx="140" cy="415" rx="100" ry="24" fill="#0284c7" opacity="0.4" filter="blur(8px)" />
+
+      <!-- Back Leg (Trailing in full running sprint) -->
+      <g>
+        <!-- Upper Leg (dark sport leggings under tunic) -->
+        <path d="M70,285 L-10,345 L15,365 L85,295 Z" fill="#0f172a" />
+        <!-- Lower Leg & Traditional Turned-toe Gutal Boot -->
+        <path d="M-10,345 L-55,395 L-40,410 L0,360 Z" fill="#78350f" />
+        <!-- Gutal Foot with classic Buryat upturned toe point -->
+        <path d="M-55,395 C-75,410 -85,420 -95,412 C-100,405 -95,395 -75,390 Z" fill="#451a03" />
+        <!-- Green & Gold Embroidery on boot -->
+        <path d="M-50,396 C-65,405 -75,410 -80,405" stroke="#22c55e" stroke-width="3" fill="none" />
+      </g>
+
+      <!-- Back Arm (Pumping backward in sprint) -->
+      <g>
+        <path d="M90,175 L20,230 L38,248 L105,190 Z" fill="#1e3a8a" />
+        <!-- Hand / Running Glove -->
+        <circle cx="15" cy="245" r="14" fill="#f5d0b0" />
+      </g>
+
+      <!-- Main Body: Traditional Buryat Degel (Традиционный бурятский дэгэл) -->
+      <!-- Torso with royal blue silk and gold floral trim -->
+      <path d="M95,160 C125,155 170,155 195,165 L225,285 L75,295 Z" fill="url(#degelGrad)" />
+      <!-- Degel Gold Brocade Hem -->
+      <path d="M75,292 L225,282 L227,294 L75,304 Z" fill="url(#goldGrad)" />
+
+      <!-- Authentic Buryat Enger (Энгэр - Tri-color stepped chest flap) -->
+      <!-- Top Band: Golden Sun -->
+      <polygon points="135,160 175,162 185,188 145,185" fill="#f59e0b" />
+      <!-- Middle Band: Sacred Blue Sky -->
+      <polygon points="145,185 185,188 192,212 152,210" fill="#0284c7" />
+      <!-- Lower Band: Red Fire / Vitality -->
+      <polygon points="152,210 192,212 200,236 158,234" fill="#dc2626" />
+
+      <!-- Traditional Red Silk Sash Belt (Бүс) with silver medallion knot -->
+      <rect x="75" y="258" width="148" height="24" rx="6" fill="url(#redGrad)" />
+      <!-- Silver Belt Plaque (Силикатный чеканный медальон) -->
+      <circle cx="145" cy="270" r="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+      <circle cx="145" cy="270" r="4" fill="#dc2626" />
+
+      <!-- Front Leg (Driving forward up high in athletic knee lift) -->
+      <g>
+        <!-- Thigh / Knee Lift -->
+        <path d="M165,280 L230,330 L210,352 L145,295 Z" fill="#0f172a" />
+        <!-- Calf descending -->
+        <path d="M230,330 L220,405 L245,410 L255,340 Z" fill="#78350f" />
+        <!-- Front Gutal Boot with curled upturned toe -->
+        <path d="M220,405 C220,425 240,432 265,432 C285,432 295,422 290,412 C285,405 270,405 245,410 Z" fill="#451a03" />
+        <!-- Curved toe lift tip -->
+        <path d="M280,410 C295,412 305,405 300,398 C290,395 280,405 280,410 Z" fill="#b45309" />
+        <!-- Gold boot trim -->
+        <path d="M235,408 C255,412 270,414 285,410" stroke="#f59e0b" stroke-width="3" fill="none" />
+      </g>
+
+      <!-- Front Arm (Pumping forward with vigor) -->
+      <g>
+        <path d="M175,170 L245,215 L232,235 L165,190 Z" fill="url(#degelGrad)" />
+        <path d="M245,215 L285,190 L295,208 L255,235 Z" fill="url(#degelGrad)" />
+        <!-- Clenched Fist -->
+        <circle cx="292" cy="195" r="14" fill="#f5d0b0" />
+      </g>
+
+      <!-- Runner's Head & Face -->
+      <!-- Neck -->
+      <rect x="135" y="140" width="28" height="26" fill="#f5d0b0" rx="4" />
+      <!-- Face (Warm Asian-Buryat complexion, cheerful determined smile) -->
+      <ellipse cx="150" cy="120" rx="32" ry="34" fill="#f5d0b0" />
+      <!-- Cheeks / Blush -->
+      <circle cx="132" cy="126" r="7" fill="#fb7185" opacity="0.4" />
+      <circle cx="168" cy="126" r="7" fill="#fb7185" opacity="0.4" />
+      <!-- Eyes (Dynamic smiling, confident) -->
+      <path d="M126,114 Q136,110 144,115" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M158,115 Q166,110 176,114" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <!-- Cheerful Confident Smile -->
+      <path d="M138,135 Q151,146 164,135" stroke="#991b1b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <!-- Hair Fringe -->
+      <path d="M120,110 C130,95 170,95 180,110 C175,102 125,102 120,110 Z" fill="#0f172a" />
+
+      <!-- ============================================== -->
+      <!-- TRADITIONAL BURYAT CAP (МАЛГАЙ) -->
+      <!-- ============================================== -->
+      <!-- Pointed Cone Hat with black velvet brim & silver top knot -->
+      <!-- Upturned Velvet Brim (Сампи / Саб) -->
+      <path d="M112,104 C112,88 188,88 188,104 C188,110 112,110 112,104 Z" fill="#0f172a" />
+      <!-- Golden embroidery line on brim -->
+      <path d="M116,104 C116,92 184,92 184,104" stroke="#f59e0b" stroke-width="2.5" fill="none" />
+
+      <!-- Conical Crown of the Malgai (Blue silk segments) -->
+      <path d="M122,96 L150,30 L178,96 Z" fill="url(#degelGrad)" />
+      <!-- Vertical decorative ribs of the hat (symbolizing universe rays) -->
+      <line x1="150" y1="30" x2="135" y2="96" stroke="#f59e0b" stroke-width="1.8" />
+      <line x1="150" y1="30" x2="165" y2="96" stroke="#f59e0b" stroke-width="1.8" />
+
+      <!-- Silver / Coral Finial Bead (Дзор) -->
+      <circle cx="150" cy="28" r="6" fill="#f8fafc" stroke="#dc2626" stroke-width="2" />
+      <circle cx="150" cy="28" r="3" fill="#dc2626" />
+
+      <!-- Flaming Red Silk Tassel (ЗАЛАА - Red Tassel Fluttering in Wind) -->
+      <!-- Streams energetically backward to convey rapid motion -->
+      <path d="M150,26 C130,15 100,20 70,12 C95,28 120,32 148,32 Z" fill="url(#redGrad)" />
+      <path d="M150,26 C125,8 90,14 60,8 C85,22 115,26 148,30 Z" fill="#ef4444" opacity="0.9" />
+      <path d="M148,28 C120,24 85,38 50,35 C80,44 115,40 146,34 Z" fill="#b91c1c" />
+    </g>
+
+    <!-- Bottom Badge Bar: 03 RUS / УЛАН-УДЭ -->
+    <g transform="translate(0, 436)">
+      <rect width="512" height="76" fill="#090d16" opacity="0.95" />
+      <rect y="0" width="512" height="3" fill="url(#goldGrad)" />
+
+      <!-- Region 03 Badge -->
+      <rect x="24" y="16" width="68" height="44" rx="8" fill="#f59e0b" />
+      <text x="58" y="46" font-family="'Russo One', Impact, sans-serif" font-weight="900" font-size="24" fill="#0f172a" text-anchor="middle">
+        03
+      </text>
+
+      <!-- Game Title Text in Icon -->
+      <text x="110" y="44" font-family="'Russo One', sans-serif" font-weight="900" font-size="25" fill="#f8fafc" letter-spacing="1">
+        СЁРФЕР
+      </text>
+      <text x="238" y="44" font-family="'Russo One', sans-serif" font-weight="900" font-size="21" fill="#38bdf8" letter-spacing="2">
+        УЛАН-УДЭ
+      </text>
+
+      <!-- Soyombo Sun Emblem on Right -->
+      <g transform="translate(450, 18) scale(0.65)">
+        <circle cx="30" cy="30" r="28" fill="url(#goldGrad)" />
+        <circle cx="30" cy="30" r="22" fill="#090d16" />
+        <circle cx="30" cy="32" r="10" fill="#f59e0b" />
+        <!-- Flame -->
+        <path d="M30,12 C24,18 24,24 30,22 C36,24 36,18 30,12 Z" fill="#f59e0b" />
+      </g>
+    </g>
+
+    <!-- Glossy Rounded Outer Rim -->
+    <rect x="2" y="2" width="508" height="508" rx="113" ry="113" fill="none" stroke="url(#goldGrad)" stroke-width="4" opacity="0.8" />
+  </g>
+</svg>
