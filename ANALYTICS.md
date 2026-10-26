@@ -1,5 +1,15 @@
 # Game download and Web launch statistics
 
+Author: Petr Korytov.
+
+The compact counter at the bottom of the Surfer card reads versioned
+`ulan-ude-surfer-*.apk` assets from `peter20191233/ulan-ude-surfer` Releases.
+It sums published releases and excludes checksums, drafts and duplicate asset IDs.
+The displayed value links to the release source. Unavailable data is shown as an
+em dash, never zero. Web launches and unique installations are not included.
+The block is one third of the OSM panel width on desktop and 64 px high;
+on narrow screens it keeps a minimum width of 144 px for readable text.
+
 APK/ZIP buttons point to the GitHub Release assets. `github-downloads.mjs`
 sums their `download_count` across all published releases, excluding checksums.
 Direct downloads under `/downloads/`, Git clone traffic, and generated source

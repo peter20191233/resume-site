@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пётр Корытов — сайт-резюме</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -81,6 +81,13 @@
             <p class="game-platforms">Иконка на домашнем экране: откройте саму игру. На iPhone в Safari выберите «Поделиться» → «На экран Домой», на Android — меню браузера → «Добавить на главный экран». Значок использует тот же рисунок, что и APK. Старый серый ярлык удалите и добавьте заново; данные браузера очищать не нужно. Для загрузки браузерной игры нужен интернет.</p>
             <p class="game-platforms">Управляйте свайпами или экранными кнопками; двойной тап включает ховерборд. На компьютере используйте стрелки / WASD и пробел.</p>
             <p class="game-platforms">Android: скачайте и установите APK. Вся игра включена в приложение и работает офлайн. Требуется современный Android WebView с WebGL 2. Прогресс сохраняется на устройстве.</p>
+            <aside class="game-downloads-compact" id="surfer-stats" aria-label="Скачивания Сёрфера по Улан-Удэ" aria-busy="true">
+              <a href="https://github.com/peter20191233/ulan-ude-surfer/releases" target="_blank" rel="noopener noreferrer" title="Скачивания APK всех опубликованных версий на GitHub. Не число установок; веб-запуски не учитываются.">
+                <span>Скачивания</span><strong id="surfer-download-count">—</strong>
+              </a>
+              <small id="surfer-stats-status" role="status">Загрузка…</small>
+              <noscript><small>Включите JavaScript</small></noscript>
+            </aside>
           </div>
         </article>
 
@@ -417,5 +424,6 @@
 
   <script src="script.js"></script>
   <script type="module" src="game-stats.mjs"></script>
+  <script type="module" src="surfer-stats.mjs"></script>
 </body>
 </html>
