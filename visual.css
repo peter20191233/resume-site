@@ -1,0 +1,126 @@
+/* Author: Petr Korytov. Graphite galleries and illustrated portfolio sections. */
+.visual-symbols{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+.visual-icon{width:36px;height:36px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.design-dark main{position:relative}
+.section{position:relative}
+.section h2:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--accent),transparent);opacity:.22;margin-left:12px}
+.design-dark .game-card{display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.design-dark .game-gallery{display:block;order:0;padding:24px 24px 18px;border-radius:0;min-width:0;background:radial-gradient(ellipse at 30% 0,#273f4a,transparent 65%),#15212b!important;border-bottom:1px solid var(--line)}
+#osm-game-release .game-gallery{background:radial-gradient(ellipse at 75% 0,#283e38,transparent 65%),#162420!important}
+.gallery-heading,.gallery-footer,.gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.gallery-heading{margin-bottom:18px;color:var(--ink);font-weight:600;font-size:14px;letter-spacing:.4px}
+.gallery-heading>span{display:flex;align-items:center;gap:12px}
+.gallery-heading .visual-icon{width:26px;height:26px;color:var(--accent)}
+.gallery-controls{gap:8px}
+.gallery-controls button,.screenshot-dialog button{display:grid;place-items:center;border:1px solid #56707c;background:#15212bbd;color:var(--accent);border-radius:50%;width:44px;height:44px;font-family:inherit;font-size:22px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.gallery-controls button:hover:not(:disabled),.screenshot-dialog button:hover{background:#31545b;transform:translateY(-2px)}
+.gallery-controls button:disabled{opacity:.3;cursor:default}
+.gallery-track{display:flex;gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#507881 transparent;padding:2px 0 14px;min-width:0}
+.design-dark .gallery-track .game-shot{flex:0 0 calc((100% - 36px)/3);width:calc((100% - 36px)/3);min-width:0;max-width:none;margin:0;padding:12px;border:1px solid #3c566147;border-radius:16px;background:#0d151be6;scroll-snap-align:start;scroll-snap-stop:always;transition:border-color .2s,background .2s}
+.gallery-track .game-shot:hover{border-color:#6be3e0;background:#172b31}
+.gallery-track .game-shot a{display:block;cursor:zoom-in;border-radius:9px}
+.design-dark .gallery-track img{width:100%;height:330px;display:block;object-fit:contain;object-position:center;border-radius:8px;background:#0c131a;box-shadow:none}
+.design-dark .gallery-track figcaption{color:#c8d6df;font-size:13px;line-height:1.5;text-align:left;margin:12px 2px 2px}
+.gallery-footer{margin-top:8px;font-size:12px;line-height:1.5;color:#a9bdc6}
+.gallery-footer output{font:12px Consolas,monospace;white-space:nowrap;color:var(--accent)}
+.game-card .game-body{order:1;padding:32px 36px}
+.game-body h3{max-width:950px}
+.game-notes{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:8px;align-items:start}
+.game-notes .game-platforms{font-size:14px;color:var(--muted);margin:18px 0 0;padding-top:18px;line-height:1.8}
+.game-notes .game-platforms:first-child{grid-column:1/-1}
+.game-downloads-compact{margin-top:24px}
+.game-stats{margin-top:24px}
+.design-dark #about{grid-template-columns:1fr 2fr;row-gap:35px}
+.interest-map{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;position:relative}
+.interest-map:before{content:"";position:absolute;left:5%;right:5%;top:50%;height:1px;background:linear-gradient(90deg,#6be3e0,#8b9fff,#c4a1ff);opacity:.4}
+.interest-node{position:relative;display:flex;align-items:center;gap:20px;padding:25px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(125deg,#1d323b,#171c24 80%);color:var(--accent);overflow:hidden}
+.interest-node:after{content:"";width:5px;height:5px;position:absolute;right:14px;top:14px;border-radius:50%;background:currentColor;box-shadow:0 0 12px currentColor;animation:visual-pulse 4s ease-in-out infinite}
+.interest-node span{color:var(--ink);font-size:15px;font-weight:600}
+.interest-1,.interest-3{color:#b7abff;background:linear-gradient(125deg,#2a2840,#171c24 80%)}
+.interest-2{color:#8eafff;background:linear-gradient(125deg,#212e47,#171c24 80%)}
+.interest-1:after{animation-delay:-1s}.interest-2:after{animation-delay:-2s}.interest-3:after{animation-delay:-3s}
+.design-dark #education .project{display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:30px;padding:32px 40px;background:radial-gradient(ellipse at 100% 50%,#39335360,transparent 65%),var(--surface);position:relative;overflow:hidden}
+.education-copy p:last-child{display:inline-block;border:1px solid #696093;padding:6px 14px;border-radius:30px;font:15px Consolas,monospace;color:#c4b9ff;margin:8px 0 0}
+.visual-scene{--scene-color:#6be3e0;position:relative;overflow:hidden;border-radius:12px;background:radial-gradient(ellipse at center,#6be3e00d,transparent 65%);color:var(--scene-color)}
+.scene-violet{--scene-color:#b8a7ff;background:radial-gradient(ellipse at center,#b8a7ff12,transparent 65%)}
+.scene-blue{--scene-color:#8bb5ff}.scene-amber{--scene-color:#ebc68b}
+.scene-svg{display:block;width:100%;height:auto;max-height:190px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.scene-grid{opacity:.065;stroke-width:1}.scene-orbit{stroke-dasharray:3 9;opacity:.4;transform-origin:160px 75px;animation:visual-orbit 60s linear infinite}.scene-ring{opacity:.18}
+.scene-route{stroke-dasharray:8 14;stroke-width:1.5;opacity:.5;animation:visual-flow 8s linear infinite}.scene-panel{fill:#1b2631;stroke:currentColor;stroke-opacity:.6;stroke-width:1}.scene-glyph{stroke-width:2}.scene-dot{fill:currentColor;stroke:none;animation:visual-pulse 4s ease-in-out infinite}
+.achievements-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.achievement-card{position:relative;display:flex;flex-direction:column;min-width:0}
+.achievement-art{display:flex;align-items:center;justify-content:space-between;height:90px;margin:-26px -26px 24px;padding:20px 26px;border-radius:17px 17px 0 0;background:radial-gradient(ellipse at 0 0,#6be3e029,transparent 75%);border-bottom:1px solid #6be3e015;position:relative;overflow:hidden;color:#6be3e0}
+.achievement-art .visual-icon{width:43px;height:43px}
+.achievement-art>span{font:42px/1 Consolas,monospace;letter-spacing:-3px;color:currentColor;opacity:.2}
+.achievement-art i{position:absolute;width:135px;height:135px;border:1px solid currentColor;opacity:.12;border-radius:50%;right:45px;top:-55px}
+.achievement-art i:after{content:"";position:absolute;inset:17px;border:1px dashed currentColor;border-radius:50%;animation:visual-orbit 50s linear infinite}
+.achievement-card:nth-child(3n+2) .achievement-art{color:#b6a7ff;background:radial-gradient(ellipse at 0 0,#b6a7ff24,transparent 75%)}
+.achievement-card:nth-child(3n) .achievement-art{color:#91b8f6;background:radial-gradient(ellipse at 0 0,#91b8f624,transparent 75%)}
+.achievement-label{align-self:flex-start;margin-bottom:14px}
+.achievement-actions{margin-top:auto;padding-top:15px}
+.design-dark .achievement-card{min-height:0;transition:transform .25s,border-color .25s}
+.design-dark #skills .card{padding:20px 24px 26px;min-width:0;overflow:hidden}
+#skills .visual-scene{margin:-10px -16px 22px}
+.design-dark #skills .card h3{font-size:20px;min-height:54px}
+.design-dark #skills .card p{font-size:15px;margin-bottom:0}
+#projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+#projects>h2{grid-column:1/-1;margin-bottom:12px}
+#projects>.project{margin:0;min-width:0;padding:26px}
+#projects>.project-game{grid-column:1/-1;padding:30px 34px;position:relative;display:grid;grid-template-columns:1fr 240px;column-gap:28px;background:radial-gradient(ellipse at 100% 50%,#28414970,transparent 65%),var(--surface)}
+#projects>.project-game>.visual-scene{grid-column:2;grid-row:1/6;align-self:center}
+#projects>.project-game>:not(.visual-scene){grid-column:1}
+#projects>.project-music{grid-column:1/-1;display:flex;align-items:center;flex-wrap:wrap;gap:20px 32px;background:linear-gradient(110deg,#212938,#171c24)}
+#projects>.project-music h3{margin:0}
+.project-music .plat-row{margin:0;flex:1;justify-content:flex-end}
+#projects>.project:not(.project-game):not(.project-music)>.visual-scene{margin:-10px -15px 20px}
+#projects>.project p{font-size:15px}
+.waveform{height:48px;display:flex;align-items:center;gap:3px;color:var(--accent);max-width:180px;overflow:hidden;flex-shrink:0}
+.waveform i{display:block;width:2px;height:var(--bar);border-radius:3px;background:currentColor;animation:visual-wave 1.8s ease-in-out var(--delay) infinite alternate;opacity:.7}
+.contact{position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.contact:after{content:"↗";font-size:22px;color:var(--accent);margin-left:auto}
+.contact:hover{border-color:var(--accent);transform:translateY(-3px)}
+.contact-ic{box-shadow:0 0 0 8px #6be3e00b}
+.screenshot-dialog{width:min(1150px,calc(100vw - 24px));max-width:none;max-height:calc(100dvh - 24px);padding:18px 22px;background:#101923;color:#f0f4f8;border:1px solid #44606b;border-radius:20px;box-shadow:0 30px 120px #0009}
+.screenshot-dialog::backdrop{background:#05080ee8;backdrop-filter:blur(10px)}
+.screenshot-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}
+.screenshot-toolbar h2{font-size:18px;font-weight:600;margin:0}
+.screenshot-full{display:block;width:100%;height:calc(100dvh - 190px);min-height:150px;object-fit:contain;background:#0c1219;border-radius:9px}
+.screenshot-nav{display:flex;align-items:center;gap:16px;margin-top:14px}
+.screenshot-nav span{font:13px Consolas,monospace;color:#bacbd6;min-width:42px;text-align:center}
+.screenshot-nav a{margin-left:auto;color:var(--accent);font-size:13px;text-decoration:underline;text-underline-offset:4px}
+body:has(.screenshot-dialog[open]){overflow:hidden}
+button:focus-visible,.gallery-track:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@keyframes visual-orbit{to{transform:rotate(360deg)}}
+@keyframes visual-flow{to{stroke-dashoffset:-88}}
+@keyframes visual-pulse{50%{opacity:.35}}
+@keyframes visual-wave{to{transform:scaleY(.35);opacity:.35}}
+@media(max-width:1000px){
+ .achievements-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .design-dark .gallery-track .game-shot{flex-basis:calc((100% - 18px)/2);width:calc((100% - 18px)/2)}
+ .interest-node{padding:20px 15px;gap:12px}.interest-node span{font-size:13px}
+ #projects{grid-template-columns:repeat(2,minmax(0,1fr))}#projects>.project:last-child{grid-column:1/-1}
+ #projects>.project-game{grid-template-columns:1fr 180px}
+ #projects>.project-music .plat-row{justify-content:flex-start;flex-basis:100%}
+}
+@media(max-width:700px){
+ .achievements-grid{grid-template-columns:1fr}
+ .section h2:after{margin-left:0}.design-dark #about{grid-template-columns:1fr;gap:24px}
+ .interest-map{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.interest-node{padding:20px 15px;flex-direction:column;gap:10px;align-items:flex-start}.interest-node span{font-size:14px}
+ .design-dark .game-gallery{padding:18px 14px 14px}.gallery-heading{font-size:13px;margin-bottom:14px}
+ .gallery-heading>span{gap:8px}.gallery-controls button{width:44px;height:44px}
+ .design-dark .gallery-track .game-shot{flex-basis:100%;width:100%;padding:12px}
+ .design-dark .gallery-track img{height:390px}.gallery-footer{align-items:flex-start;font-size:11px;gap:15px}.gallery-footer>span{max-width:210px}
+ .game-card .game-body{padding:24px 20px}.game-notes{display:block}.game-notes .game-platforms{font-size:14px;padding-top:16px;margin-top:18px}
+ .design-dark #education .project{grid-template-columns:1fr;padding:26px;gap:18px}.education-copy h3{font-size:23px}
+ #education .visual-scene{max-width:300px;width:100%;justify-self:center}
+ .achievement-art{margin:-22px -22px 20px;padding:18px 22px;height:85px}
+ .design-dark .achievement-card{padding:22px}.design-dark #skills .card h3{min-height:0}
+ #projects{display:block}#projects>h2{margin-bottom:26px}#projects>.project{margin-bottom:18px;padding:24px}
+ #projects>.project-game{display:flex;flex-direction:column;padding:24px}#projects>.project-game>.visual-scene{width:100%;max-width:320px;order:0;align-self:center;margin-bottom:14px}
+ #projects>.project-game>:not(.visual-scene){order:1}
+ #projects>.project-music{gap:20px}.waveform{max-width:100%;width:100%;justify-content:center}.project-music .plat-row{gap:13px}
+ .screenshot-dialog{padding:14px;border-radius:14px}.screenshot-toolbar h2{font-size:16px}.screenshot-toolbar button{flex-shrink:0}
+ .screenshot-nav{gap:9px;flex-wrap:wrap}.screenshot-nav a{font-size:12px}.screenshot-full{height:calc(100dvh - 195px)}
+}
+@media(max-width:380px){.design-dark .gallery-track img{height:340px}.gallery-heading{font-size:12px}.interest-node span{font-size:12px}.screenshot-nav{gap:6px}.screenshot-nav button{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.scene-orbit,.scene-route,.scene-dot,.interest-node:after,.achievement-art i:after,.waveform i{animation:none!important}html{scroll-behavior:auto}.gallery-track{scroll-behavior:auto}.contact,.achievement-card,.game-shot{transition:none!important}}

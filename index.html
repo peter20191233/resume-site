@@ -8,8 +8,10 @@
   <meta name="author" content="Petr Korytov">
   <meta name="theme-color" content="#101319">
   <link rel="stylesheet" href="graphite.css?v=2">
+  <link rel="stylesheet" href="visual.css?v=1">
 </head>
 <body class="design-dark">
+<svg class="visual-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="v-chart" viewBox="0 0 64 64"><path d="M10 10v44h46M18 40l12-12 10 6 14-20M44 14h10v10"/><path d="M21 48v-5m12 5V37m12 11V32"/></symbol><symbol id="v-database" viewBox="0 0 64 64"><ellipse cx="32" cy="15" rx="21" ry="8"/><path d="M11 15v32c0 11 42 11 42 0V15M11 31c0 11 42 11 42 0"/><path d="M22 26h1m-1 16h1"/></symbol><symbol id="v-code" viewBox="0 0 64 64"><rect x="6" y="9" width="52" height="46" rx="7"/><path d="M6 22h52M13 16h1m6 0h1m6 0h1M24 30l-8 8 8 8m16-16 8 8-8 8m-5-18-6 20"/></symbol><symbol id="v-slides" viewBox="0 0 64 64"><rect x="7" y="8" width="50" height="37" rx="4"/><path d="M32 45v12m-12 0 12-7 12 7M17 34l9-11 9 6 12-12"/></symbol><symbol id="v-spark" viewBox="0 0 64 64"><path d="m32 5 6 20 20 7-20 6-6 21-7-21-20-6 20-7Z"/><path d="m50 5 2 5 5 2-5 2-2 5-2-5-5-2 5-2Z"/></symbol><symbol id="v-trophy" viewBox="0 0 64 64"><path d="M19 8h26v17c0 11-5 17-13 17s-13-6-13-17ZM19 14H9v8c0 9 6 12 12 12m24-20h10v8c0 9-6 12-12 12M32 42v12m-12 3h24"/></symbol><symbol id="v-globe" viewBox="0 0 64 64"><circle cx="32" cy="32" r="25"/><ellipse cx="32" cy="32" rx="12" ry="25"/><path d="M7 32h50M12 17h40M12 47h40"/></symbol><symbol id="v-book" viewBox="0 0 64 64"><path d="M32 17C21 10 10 10 5 13v38c9-4 18-3 27 3 9-6 18-7 27-3V13c-5-3-16-3-27 4Zm0 0v37M13 24l11 2m-11 8 11 2m16-10 11-2m-11 12 11-2"/></symbol><symbol id="v-growth" viewBox="0 0 64 64"><path d="M9 53h46M17 53V37h9v16m7 0V27h9v26m7 0V15h9v38M9 26l15-11 11 5L53 5m-10 0h10v10"/></symbol><symbol id="v-game" viewBox="0 0 64 64"><path d="M20 19h24c10 0 17 27 12 32-5 5-15-6-19-6H27c-4 0-14 11-19 6-5-5 2-32 12-32Z"/><path d="M19 29v12m-6-6h12m17-5h1m6 7h1M32 19V9h9"/></symbol><symbol id="v-chat" viewBox="0 0 64 64"><path d="M8 11h48v34H31L17 56V45H8Z"/><path d="M19 23h26M19 32h17"/></symbol><symbol id="v-web" viewBox="0 0 64 64"><rect x="5" y="9" width="54" height="46" rx="6"/><path d="M5 22h54M13 16h1m6 0h1m6 0h1M13 30h15v17H13Zm22 0h15m-15 8h15m-15 8h9"/></symbol><symbol id="v-cap" viewBox="0 0 64 64"><path d="m4 23 28-14 28 14-28 14ZM14 29v16c10 9 26 9 36 0V29M60 23v23"/></symbol><symbol id="v-arrow" viewBox="0 0 64 64"><path d="M12 32h40M36 16l16 16-16 16"/></symbol></svg>
 
   <!-- Логотипы площадок: изображения в assets/icons/ -->
 
@@ -51,7 +53,7 @@
         Я развиваюсь в области аналитики и менеджмента.
         Участвую в кейс-чемпионатах и создаю собственные проекты.
       </p>
-    </section>
+    <div class="interest-map" aria-label="Мои интересы"><div class="interest-node interest-0"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-chart"/></svg><span>Финансы</span></div><div class="interest-node interest-1"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-database"/></svg><span>SQL</span></div><div class="interest-node interest-2"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-code"/></svg><span>Python</span></div><div class="interest-node interest-3"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-spark"/></svg><span>ИИ-инструменты</span></div></div></section>
 
     <section id="recent" class="section">
       <h2>Недавнее</h2>
@@ -59,7 +61,9 @@
       <div class="recent-grid">
         <!-- Author: Petr Korytov -->
         <article class="game-card" id="ulan-ude-surfer-release" aria-labelledby="ulan-ude-surfer-title">
-          <div class="game-cover" style="background:linear-gradient(145deg,#dcefff,#b6d1ec);color:#17344f" aria-label="Скриншоты Сёрфера по Улан-Удэ">
+          <div class="game-cover game-gallery" data-gallery aria-label="Скриншоты: Сёрфер по Улан-Удэ">
+      <div class="gallery-heading"><span><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-game"/></svg> Кадры игры</span><div class="gallery-controls"><button type="button" data-gallery-prev aria-label="Предыдущие кадры: Сёрфер по Улан-Удэ" aria-controls="ulan-ude-surfer-release-gallery">←</button><button type="button" data-gallery-next aria-label="Следующие кадры: Сёрфер по Улан-Удэ" aria-controls="ulan-ude-surfer-release-gallery">→</button></div></div>
+      <div class="gallery-track" id="ulan-ude-surfer-release-gallery" tabindex="0" role="region" aria-label="Галерея: Сёрфер по Улан-Удэ. Листайте стрелками клавиатуры.">
             <figure class="game-shot game-shot-mobile">
               <a href="assets/ulan-ude-gameplay.png" target="_blank" rel="noopener noreferrer"><img src="assets/ulan-ude-gameplay.png" alt="Светлана бежит по заснеженным трамвайным путям Улан-Удэ" width="520" height="720" loading="lazy"></a>
               <figcaption>Зимний забег по городу</figcaption>
@@ -68,7 +72,9 @@
               <a href="assets/ulan-ude-characters.png" target="_blank" rel="noopener noreferrer"><img src="assets/ulan-ude-characters.png" alt="Модели Светланы в зимней куртке и Богатыря в меховом тулупе" width="720" height="420" loading="lazy"></a>
               <figcaption>Светлана и Богатырь</figcaption>
             </figure>
-          </div>
+          <figure class="game-shot"><a href="assets/ulan-ude-menu.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть: Главное меню"><img src="assets/ulan-ude-menu.png" alt="Главное меню Сёрфера по Улан-Удэ" width="520" height="720" loading="lazy"></a><figcaption>Главное меню</figcaption></figure><figure class="game-shot"><a href="assets/gallery/surfer-missions.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть: Миссии и награды"><img src="assets/gallery/surfer-missions.png" alt="Экран миссий в Сёрфере по Улан-Удэ" width="520" height="820" loading="lazy"></a><figcaption>Миссии и награды</figcaption></figure><figure class="game-shot"><a href="assets/gallery/surfer-heroes.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть: Выбор героя"><img src="assets/gallery/surfer-heroes.png" alt="Экран выбора героев в Сёрфере по Улан-Удэ" width="520" height="820" loading="lazy"></a><figcaption>Выбор героя</figcaption></figure></div>
+      <div class="gallery-footer"><span>Листайте · нажмите на кадр, чтобы увеличить</span><output data-gallery-count aria-live="polite"></output></div>
+    </div>
           <div class="game-body">
             <span class="game-tag">Видеоигра · 3D-раннер · <time datetime="2026-10-26">26.10.2026</time></span>
             <h3 id="ulan-ude-surfer-title">Сёрфер по Улан-Удэ</h3>
@@ -78,12 +84,12 @@
               <a class="game-action-primary" href="games/ulan-ude-surfer/" target="_blank" rel="noopener">Играть в браузере · iPhone, Android и компьютер</a>
               <a href="https://github.com/peter20191233/ulan-ude-surfer/releases/download/v1.2.2/ulan-ude-surfer-1.2.2.apk">Скачать для Android · APK</a>
               <a href="https://github.com/peter20191233/ulan-ude-surfer/releases/latest" target="_blank" rel="noopener noreferrer">Выпуск на GitHub ↗</a>
-            </div>
+            </div><div class="game-notes">
             <p class="game-platforms"><strong>Обновление 1.2.2 · <time datetime="2026-10-29">29.10.2026</time>.</strong> Модели города переиспользуются, графические ресурсы освобождаются, а повторяющиеся детали рисуются группами. Снижена нагрузка от обновления счётчиков; движение и управление остаются покадровыми. Экранные кнопки реагируют при касании, свайпы — во время движения пальца. <a href="https://github.com/peter20191233/ulan-ude-surfer/releases/tag/v1.2.2" target="_blank" rel="noopener noreferrer">Подробнее о выпуске ↗</a></p>
             <p class="game-platforms">Светлана — с отдельной моделью, причёской и зимними наушниками. Богатырь — мощный бегун в тулупе с меховой отделкой. Снегопад появляется в случайные интервалы и влияет только на изображение.</p>
             <p class="game-platforms">Иконка на домашнем экране: откройте саму игру. На iPhone в Safari выберите «Поделиться» → «На экран Домой», на Android — меню браузера → «Добавить на главный экран». Значок использует тот же рисунок, что и APK. Старый серый ярлык удалите и добавьте заново; данные браузера очищать не нужно. Для загрузки браузерной игры нужен интернет.</p>
             <p class="game-platforms">Управляйте свайпами или экранными кнопками; двойной тап включает ховерборд. На компьютере используйте стрелки / WASD и пробел.</p>
-            <p class="game-platforms">Android: скачайте и установите APK. Вся игра включена в приложение и работает офлайн. Требуется современный Android WebView с WebGL 2. Прогресс сохраняется на устройстве.</p>
+            <p class="game-platforms">Android: скачайте и установите APK. Вся игра включена в приложение и работает офлайн. Требуется современный Android WebView с WebGL 2. Прогресс сохраняется на устройстве.</p></div>
             <aside class="game-downloads-compact" id="surfer-stats" aria-label="Скачивания Сёрфера по Улан-Удэ" aria-busy="true">
               <a href="https://github.com/peter20191233/ulan-ude-surfer/releases" target="_blank" rel="noopener noreferrer" title="Скачивания APK всех опубликованных версий на GitHub. Не число установок; веб-запуски не учитываются.">
                 <span>Скачивания</span><strong id="surfer-download-count">—</strong>
@@ -95,7 +101,9 @@
         </article>
 
         <article class="game-card" id="osm-game-release" aria-labelledby="osm-game-title">
-          <div class="game-cover" aria-label="Скриншоты игрового процесса">
+          <div class="game-cover game-gallery" data-gallery aria-label="Скриншоты: Будни ОСМ">
+      <div class="gallery-heading"><span><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-game"/></svg> Кадры игры</span><div class="gallery-controls"><button type="button" data-gallery-prev aria-label="Предыдущие кадры: Будни ОСМ" aria-controls="osm-game-release-gallery">←</button><button type="button" data-gallery-next aria-label="Следующие кадры: Будни ОСМ" aria-controls="osm-game-release-gallery">→</button></div></div>
+      <div class="gallery-track" id="osm-game-release-gallery" tabindex="0" role="region" aria-label="Галерея: Будни ОСМ. Листайте стрелками клавиатуры.">
             <figure class="game-shot">
               <a href="assets/osm-game-desktop.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот игры на компьютере в полном размере">
                 <img src="assets/osm-game-desktop.png" alt="Игра на компьютере: клиент просит консультацию по кредиту, выбран верный талон и начислен один балл." width="1280" height="1142" loading="lazy">
@@ -108,7 +116,9 @@
               </a>
               <figcaption>Игра на телефоне</figcaption>
             </figure>
-          </div>
+          <figure class="game-shot"><a href="assets/gallery/osm-start.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть: Начало смены"><img src="assets/gallery/osm-start.png" alt="Начальный экран Будней ОСМ с банковским отделением и терминалом" width="1280" height="1300" loading="lazy"></a><figcaption>Начало смены</figcaption></figure><figure class="game-shot"><a href="assets/gallery/osm-guide.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть: Справочник услуг"><img src="assets/gallery/osm-guide.png" alt="Справочник шести разделов терминала в Буднях ОСМ" width="1280" height="1300" loading="lazy"></a><figcaption>Справочник услуг</figcaption></figure></div>
+      <div class="gallery-footer"><span>Листайте · нажмите на кадр, чтобы увеличить</span><output data-gallery-count aria-live="polite"></output></div>
+    </div>
           <div class="game-body">
             <span class="game-tag">Видеоигра · Python · 2026</span>
             <h3 id="osm-game-title">Будни Операционно-Сервисного Менеджера</h3>
@@ -141,12 +151,12 @@
                 <p>Старые скачивания напрямую с сайта и прежние запуски Web не учитывались. Офлайн-запуски и блокировщики аналитики могут уменьшать показания. Это вся доступная учтённая история, а не полное число загрузок с первого выпуска.</p>
               </details>
               <noscript>Для загрузки статистики включите JavaScript.</noscript>
-            </section>
+            </section><div class="game-notes">
             <p class="game-platforms">Музыка «Спокойная смена» сочинена ИИ для игры и работает офлайн. Она запускается с началом смены. Кнопка ♪ включает и выключает музыку и звуки; при паузе и сворачивании музыка останавливается.</p>
             <p class="game-platforms"><strong>Обновление 1.1.1 — <time datetime="2026-10-04">04.10.2026</time>.</strong> Упрощён внутренний код игры, добавлены автоматические проверки и уточнены инструкции для macOS. Опубликованы обновлённые APK, ZIP и веб-версия. Привычные правила, игровые ситуации и музыка сохранены.</p>
             <p class="game-platforms">Android 12 и новее: скачайте APK версии 1.1.1, откройте его и нажмите «Установить». Его можно установить поверх предыдущей версии. Затем запускайте «Будни ОСМ» с экрана приложений. Вся игра уже внутри: интернет, Python, компьютер и распаковка не нужны. <a href="https://github.com/peter20191233/osm-manager-game/blob/main/ANDROID.md" target="_blank" rel="noopener noreferrer">Установка на Android ↗</a></p>
             <p class="game-platforms">iPhone: откройте <a href="games/osm/">веб-приложение в Safari</a> → «Поделиться» → «На экран „Домой“» → «Добавить». Если появится переключатель «Открывать как веб-приложение», включите его. Запустите игру с новой иконки с включённым интернетом и дождитесь надписи «Игра сохранена». После этого можно играть офлайн — без Python, компьютера и распаковки. Для обновления ранее установленной веб-игры откройте её с интернетом, дождитесь сохранения и полностью закройте и откройте снова. <a href="https://github.com/peter20191233/osm-manager-game/blob/main/IOS.md">Инструкция для iPhone ↗</a></p>
-            <p class="game-platforms">Windows и macOS: распакуйте ZIP и откройте «Играть.html» в браузере. На Mac подойдут Safari или Chrome; файлы запуска .cmd предназначены только для Windows. На Mac также можно играть без распаковки — откройте <a href="games/osm/">веб-версию</a> в браузере. <a href="https://github.com/peter20191233/osm-manager-game#readme" target="_blank" rel="noopener noreferrer">Другие способы запуска ↗</a></p>
+            <p class="game-platforms">Windows и macOS: распакуйте ZIP и откройте «Играть.html» в браузере. На Mac подойдут Safari или Chrome; файлы запуска .cmd предназначены только для Windows. На Mac также можно играть без распаковки — откройте <a href="games/osm/">веб-версию</a> в браузере. <a href="https://github.com/peter20191233/osm-manager-game#readme" target="_blank" rel="noopener noreferrer">Другие способы запуска ↗</a></p></div>
           </div>
         </article>
 
@@ -201,11 +211,18 @@
     <section id="education" class="section">
   <h2>Образование</h2>
 
-  <div class="project">
+  <div class="project"><div class="education-copy">
     <h3>Экономический факультет МГУ</h3>
     <p>направление: Менеджмент</p>
     <p>2023 — 2027</p>
-  </div>
+  </div><div class="visual-scene scene-violet" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-cap" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div></div>
 </section>
 
 <section id="achievements" class="section">
@@ -213,7 +230,7 @@
 
   <div class="achievements-grid">
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-trophy"/></svg><span>01</span><i></i></div>
       <span class="achievement-label">Победа</span>
       <h3>Бизнес-игра S+ Консалтинг и кейс ППР</h3>
       <p class="achievement-org">S+ Консалтинг / ППР</p>
@@ -226,7 +243,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-globe"/></svg><span>02</span><i></i></div>
       <span class="achievement-label">Победа</span>
       <h3>«Диалог между двумя мирами»</h3>
       <p class="achievement-org">МГИМО</p>
@@ -239,7 +256,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-spark"/></svg><span>03</span><i></i></div>
       <span class="achievement-label">Финал</span>
       <h3>«ИИ в государственном управлении»</h3>
       <p class="achievement-org">МГИМО</p>
@@ -252,7 +269,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-growth"/></svg><span>04</span><i></i></div>
       <span class="achievement-label">Предпринимательство</span>
       <h3>«Начни свой бизнес с Москвой»</h3>
       <p class="achievement-org">Московская торгово-промышленная палата</p>
@@ -265,7 +282,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-globe"/></svg><span>05</span><i></i></div>
       <span class="achievement-label">Финал</span>
       <h3>Школа международного предпринимательства</h3>
       <p class="achievement-org">Московская торгово-промышленная палата</p>
@@ -277,7 +294,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-book"/></svg><span>06</span><i></i></div>
       <span class="achievement-label">Обучение</span>
       <h3>Young CFO Academy 2025</h3>
       <p class="achievement-org">Б1</p>
@@ -289,7 +306,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-trophy"/></svg><span>07</span><i></i></div>
       <span class="achievement-label">Победа</span>
       <h3>Кейс-чемпионат FINOPOLIS.365</h3>
       <p class="achievement-org">Банк России и партнёры</p>
@@ -302,7 +319,7 @@
       </div>
     </div>
 
-    <div class="achievement-card">
+    <div class="achievement-card"><div class="achievement-art" aria-hidden="true"><svg class="visual-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#v-chart"/></svg><span>08</span><i></i></div>
       <span class="achievement-label">Победа</span>
       <h3>ПУЛЬС MOEX 2026</h3>
       <p class="achievement-org">Московская биржа</p>
@@ -322,22 +339,50 @@
 
       <div class="cards">
         <div class="card">
-          <h3>Финансы и аналитика</h3>
+          <div class="visual-scene scene-cyan" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-chart" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>Финансы и аналитика</h3>
           <p>Анализ данных, работа с выводами, презентация решений.</p>
         </div>
 
         <div class="card">
-          <h3>SQL</h3>
+          <div class="visual-scene scene-violet" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-database" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>SQL</h3>
           <p>Базовые запросы, агрегаты, фильтрация, работа с таблицами.</p>
         </div>
 
         <div class="card">
-          <h3>Python</h3>
+          <div class="visual-scene scene-blue" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-code" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>Python</h3>
           <p>Основы программирования и автоматизация задач.</p>
         </div>
 
         <div class="card">
-          <h3>Презентации</h3>
+          <div class="visual-scene scene-amber" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-slides" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>Презентации</h3>
           <p>PowerPoint, Figma, Claude Design.</p>
         </div>
       </div>
@@ -347,7 +392,14 @@
       <h2>Проекты</h2>
 
       <article class="project project-game" aria-labelledby="osm-project-title">
-        <span class="game-tag">Выпущенная игра</span>
+        <div class="visual-scene scene-cyan" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-game" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><span class="game-tag">Выпущенная игра</span>
         <h3 id="osm-project-title">Будни Операционно-Сервисного Менеджера</h3>
         <p>Игра на Python и Brython с векторной графикой — доступны отдельное приложение для Android и устанавливаемая веб-версия для iPhone с работой без интернета. Помогайте клиентам попасть к нужным сотрудникам: пройдите смену из 12 клиентов с 35 секундами на каждый ответ или потренируйтесь без таймера.</p>
         <p class="game-project-note">Ситуации основаны на услугах Сбера, Альфа-Банка и ВТБ. Разделы терминала обобщены для игры — это не официальный тренажёр банков.</p>
@@ -358,7 +410,7 @@
       </article>
 
       <div class="project project-music">
-        <h3>Музыкальные релизы</h3>
+        <div class="waveform" aria-hidden="true"><i style="--bar:12px;--delay:-0.0s"></i><i style="--bar:25px;--delay:-0.19s"></i><i style="--bar:38px;--delay:-0.38s"></i><i style="--bar:22px;--delay:-0.5700000000000001s"></i><i style="--bar:35px;--delay:-0.76s"></i><i style="--bar:19px;--delay:-0.95s"></i><i style="--bar:32px;--delay:-1.1400000000000001s"></i><i style="--bar:16px;--delay:-0.0s"></i><i style="--bar:29px;--delay:-0.19s"></i><i style="--bar:13px;--delay:-0.38s"></i><i style="--bar:26px;--delay:-0.5700000000000001s"></i><i style="--bar:39px;--delay:-0.76s"></i><i style="--bar:23px;--delay:-0.95s"></i><i style="--bar:36px;--delay:-1.1400000000000001s"></i><i style="--bar:20px;--delay:-0.0s"></i><i style="--bar:33px;--delay:-0.19s"></i><i style="--bar:17px;--delay:-0.38s"></i><i style="--bar:30px;--delay:-0.5700000000000001s"></i><i style="--bar:14px;--delay:-0.76s"></i><i style="--bar:27px;--delay:-0.95s"></i><i style="--bar:40px;--delay:-1.1400000000000001s"></i><i style="--bar:24px;--delay:-0.0s"></i><i style="--bar:37px;--delay:-0.19s"></i><i style="--bar:21px;--delay:-0.38s"></i><i style="--bar:34px;--delay:-0.5700000000000001s"></i><i style="--bar:18px;--delay:-0.76s"></i><i style="--bar:31px;--delay:-0.95s"></i><i style="--bar:15px;--delay:-1.1400000000000001s"></i><i style="--bar:28px;--delay:-0.0s"></i><i style="--bar:12px;--delay:-0.19s"></i><i style="--bar:25px;--delay:-0.38s"></i><i style="--bar:38px;--delay:-0.5700000000000001s"></i><i style="--bar:22px;--delay:-0.76s"></i><i style="--bar:35px;--delay:-0.95s"></i><i style="--bar:19px;--delay:-1.1400000000000001s"></i><i style="--bar:32px;--delay:-0.0s"></i></div><h3>Музыкальные релизы</h3>
 
         <div class="plat-row plat-row--sm">
           <a class="plat" href="https://music.yandex.ru/artist/26191858" target="_blank" rel="noopener noreferrer" aria-label="Слушать на Яндекс Музыке">
@@ -389,17 +441,38 @@
       </div>
 
       <div class="project">
-        <h3>Telegram-бот для голосований</h3>
+        <div class="visual-scene scene-cyan" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-chat" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>Telegram-бот для голосований</h3>
         <p>Бот для создания голосований в Telegram-чатах с выбором нескольких вариантов.</p>
       </div>
 
       <div class="project">
-        <h3>Сайт-резюме</h3>
+        <div class="visual-scene scene-blue" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-web" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>Сайт-резюме</h3>
         <p>Личный сайт на HTML, CSS и JavaScript для презентации опыта, навыков и проектов.</p>
       </div>
 
       <div class="project">
-        <h3>SQL-задачи</h3>
+        <div class="visual-scene scene-violet" aria-hidden="true"><svg viewBox="0 0 320 150" class="scene-svg">
+      <path class="scene-grid" d="M0 30H320M0 70H320M0 110H320M40 0V150M100 0V150M160 0V150M220 0V150M280 0V150"/>
+      <circle class="scene-orbit" cx="160" cy="75" r="62"/><circle class="scene-ring" cx="160" cy="75" r="45"/>
+      <path class="scene-route" d="M0 110H80L112 75H208L240 40H320"/>
+      <rect class="scene-panel" x="119" y="34" width="82" height="82" rx="22"/>
+      <use class="scene-glyph" href="#v-database" x="134" y="49" width="52" height="52"/>
+      <circle class="scene-dot" cx="55" cy="110" r="4"/><circle class="scene-dot" cx="267" cy="40" r="4"/>
+    </svg></div><h3>SQL-задачи</h3>
         <p>Решаю учебные задачи по полному циклу аналитики: сбор, обработка и анализ данных, визуализация в Power BI.</p>
       </div>
     </section>
@@ -434,6 +507,12 @@
   </dialog>
 
 
+
+  <dialog class="screenshot-dialog" id="screenshot-viewer" aria-labelledby="screenshot-title">
+    <div class="screenshot-toolbar"><h2 id="screenshot-title">Кадр игры</h2><button type="button" data-close-screenshot aria-label="Закрыть изображение">×</button></div>
+    <img class="screenshot-full" alt="">
+    <div class="screenshot-nav"><button type="button" data-screenshot-prev aria-label="Предыдущий скриншот">←</button><span data-screenshot-count aria-live="polite"></span><button type="button" data-screenshot-next aria-label="Следующий скриншот">→</button><a data-screenshot-original target="_blank" rel="noopener noreferrer">Полный размер ↗</a></div>
+  </dialog>
   <footer class="footer">
     <p>© 2026 Петр Корытов</p>
   </footer>
@@ -442,5 +521,7 @@
   <script src="music-player.js?v=1" defer></script>
   <script type="module" src="game-stats.mjs"></script>
   <script type="module" src="surfer-stats.mjs"></script>
+  <script src="visual.js?v=1" defer></script>
 </body>
 </html>
+
