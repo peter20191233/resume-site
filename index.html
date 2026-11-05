@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css?v=7">
   <meta name="author" content="Petr Korytov">
   <meta name="theme-color" content="#101319">
-  <link rel="stylesheet" href="graphite.css?v=1">
+  <link rel="stylesheet" href="graphite.css?v=2">
 </head>
 <body class="design-dark">
 
@@ -150,7 +150,7 @@
           </div>
         </article>
 
-        <article class="music-card">
+        <article class="music-card" id="music-release">
           <div class="music-cover">
             <span class="music-eyebrow">Новый релиз</span>
             <div class="vinyl"></div>
@@ -186,12 +186,15 @@
                 <span class="plat-name">SoundCloud</span>
               </a>
             </div>
+            <div class="music-embed-actions">
+              <button class="music-player-button" type="button" data-open-music-player aria-haspopup="dialog" aria-controls="music-player">
+                <span aria-hidden="true">▶</span> Плеер и профиль
+              </button>
+              <a class="music-profile-link" href="https://band.link/petrkorytov" target="_blank" rel="noopener noreferrer">Открыть BandLink ↗</a>
+            </div>
           </div>
         </article>
 
-        <div class="bandlink">
-          <iframe allowfullscreen="true" width="370" height="950" loading="lazy" scrolling="no" title="BandLink — С Днём Рождения, Мама!" style="width:370px;max-width:100%;border:0;border-radius:18px;background:#fff" src="https://band.link/petrkorytov/iframe?youtube_enabled=1&header=1&title=1&theme=light&player_enabled=1&picture=1&footer=1"></iframe>
-        </div>
       </div>
     </section>
 
@@ -421,11 +424,22 @@
     </section>
   </main>
 
+  <!-- Author: Petr Korytov. The complete BandLink profile remains available in this dialog. -->
+  <dialog class="music-dialog" id="music-player" aria-labelledby="music-player-title">
+    <div class="music-dialog-header">
+      <h2 id="music-player-title">Плеер и профиль артиста</h2>
+      <button class="music-dialog-close" type="button" data-close-music-player aria-label="Закрыть плеер">×</button>
+    </div>
+    <iframe class="music-player-frame" allowfullscreen="true" width="370" height="950" loading="lazy" scrolling="yes" title="BandLink — С Днём Рождения, Мама!" src="https://band.link/petrkorytov/iframe?youtube_enabled=1&header=1&title=1&theme=light&player_enabled=1&picture=1&footer=1"></iframe>
+  </dialog>
+
+
   <footer class="footer">
     <p>© 2026 Петр Корытов</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="music-player.js?v=1" defer></script>
   <script type="module" src="game-stats.mjs"></script>
   <script type="module" src="surfer-stats.mjs"></script>
 </body>
