@@ -1,6 +1,6 @@
 {
-  "name": "City Deliverer — Port Morrow",
-  "short_name": "City Deliverer",
+  "name": "City ​Deliverer",
+  "short_name": "City ​Deliverer",
   "description": "A free-driving courier story in a small harbor city.",
   "start_url": "./",
   "scope": "./",
@@ -9,8 +9,8 @@
   "background_color": "#f2e7d2",
   "theme_color": "#ad513e",
   "icons": [
-    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "./icons/icon-192.png?v=2", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png?v=2", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png?v=2", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }

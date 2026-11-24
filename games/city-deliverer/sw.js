@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'city-deliverer-assets-';
-const CACHE = `${CACHE_PREFIX}v2`;
+const CACHE = `${CACHE_PREFIX}v3`;
 const LEGACY_CACHE = 'tramline-assets-v4-author';
 const CACHEABLE = /\.(?:js|css|png|svg|woff2?|ttf|webmanifest)$/i;
 
